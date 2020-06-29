@@ -1,0 +1,13 @@
+<p>person-list works!</p>
+
+
+<button (click)="showj=!showj">change to jirrafs</button>
+
+<ul *ngIf="!showj">
+    <li *ngFor="let x of persondb.db.student">{{x.name}}-{{x.age}}</li>
+</ul>
+
+<ul *ngIf="showj">
+    <li *ngFor="let x of persondb.db.jiraffs">{{x.name}}-{{x.age}}</li>
+</ul>
+
